@@ -4,3 +4,7 @@ body {
 .container {
 	width: auto !important
 }
+
+.navbar-nav.navbar-right:last-child {
+	margin-right: 0 !important;
+}
