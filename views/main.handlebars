@@ -3,11 +3,17 @@
 		<div class="col-md-12 column">
 			<h1>Friend Feed <small>Keep in touch</small></h1>
 			<HR>
+			<h4>People you haven't seen recently...</h4>
 			{{#each data.friends}}
 				<div class="friend"> 
-					<img src="{{imageURL}}" class="thumbnail img-responsive img-rounded">
-					<h3><a href="#" class="name">{{name}}</a></h3>
-					<p>{{description}}</p>
+					<div class="img-wrap">
+						<img width="300px" height="400px" src="{{imageURL}}" >
+						<div class="img-overlay">
+							<h3 class="name">{{name}} <button width=100% type="button" class="btn btn-success refreshbtn"><i class="fa fa-leaf fa-1x"></i></button></h3>
+							
+						</div>
+					</div>
+					
 				</div>
 			{{/each}}
 		</div>
