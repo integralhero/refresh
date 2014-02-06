@@ -1,11 +1,15 @@
 <div class="container">
 	<div class="row clearfix">
-		<div class="col-md-3 column">
-		</div> 
-		<div class="col-md-9 column">
-			<h2>Friend Feed<BR> <small>Keep in touch</small></h2>
+		<div class="col-md-12 column">
+			<h1>Friend Feed <small>Keep in touch</small></h1>
 			<HR>
-			
+			{{#each data.friends}}
+				<div class="friend"> 
+					<img src="{{imageURL}}" class="thumbnail img-responsive img-rounded">
+					<h3><a href="#" class="name">{{name}}</a></h3>
+					<p>{{description}}</p>
+				</div>
+			{{/each}}
 		</div>
 	</div>
 </div>
