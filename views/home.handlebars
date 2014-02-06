@@ -1,1 +1,51 @@
-<h1>Example App: Home</h1>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>refresh</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+		<div class="container" >
+			<h1 id="titleblock" class="text-center">Refresh</h1>
+			<div class="row">
+			  <div class="page-header"><h2>Login Form</h2></div>
+			  <form class="form-horizontal" role="form" method="get" action="/home">
+			    <fieldset>
+
+			      <!-- Form Name -->
+			      <legend><h3>Have an account? Sign In</h3></legend>
+
+			      <!-- Text input-->
+			      <div class="form-group">
+			        <label class="col-md-1 control-label" for="username"></label>  
+			        <div class="col-md-12">
+			          <input id="username" name="username" type="text" placeholder="Username" class="form-control input-md">
+			        </div>
+			      </div>
+
+			      <!-- Password input-->
+			      <div class="form-group">
+			        <label class="col-md-1 control-label" for="password"></label>
+			        <div class="col-md-12">
+			          <input id="password" name="password" type="password" placeholder="Password" class="form-control input-md">
+			        </div>
+			      </div>
+
+			      <!-- Button (Double) -->
+			      <div class="form-group">
+			        <label class="col-md-1 control-label" for="login"></label>
+			      <div class="col-md-5">
+			        <button id="login" name="login" class="btn btn-block btn-success">Login</button>
+			      </div>
+			      <div class="col-md-5">
+			        <button id="forpass" name="forpass" class="btn btn-block btn-warning">I forgot my password</button></div>  
+			      </div>
+			    </fieldset>
+			  </form>
+			</div> <!--./row -->
+			</div> <!--./container -->
+
+</body>
+</html>
