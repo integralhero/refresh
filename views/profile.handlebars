@@ -4,7 +4,7 @@
 		</div>
 		<div class="col-md-6 column">
 			<div>
-			 <img class="img-thumbnail" src="http://lorempixel.com/output/people-q-c-640-463-8.jpg"/>
+			 <img class="img-thumbnail" src="http://lorempixel.com/output/people-q-c-640-462-3.jpg"/>
 			</div>
 			<h2>David Jiang<BR> <small>This is you.</small></h2>
 			<HR>
@@ -13,7 +13,24 @@
 		<div class="col-md-3 column">
 			<h3>Friendship Tracker</h3>
 			<HR>
-			<h5>Friends seen this month:</h5>
+			<div id="curFriends">
+				<h5>Friends seen this month:</h5>
+				{{#each data.friends}}
+					<div class="friendSmall"> 
+							<img width="75px" height="100px" src="{{imageURL}}" >
+						
+					</div>
+				{{/each}}
+			</div>
+			<div id="oldFriends">
+				<h5>Friends you should get in touch with:</h5>
+				{{#each data.friends}}
+					<div class="friendSmall"> 
+							<img width="75px" height="100px" src="{{imageURL}}" >
+						
+					</div>
+				{{/each}}
+			</div>
 		</div>
 	</div>
 </div>

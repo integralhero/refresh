@@ -17,6 +17,11 @@ body {
 	overflow: hidden;
 }
 
+.friendSmall {
+	width: 75px;
+	height: 100px;
+	float: left;
+}
 .img-wrap{
 	height:400px;
 	overflow:hidden;
@@ -43,7 +48,9 @@ body {
 	-moz-transition:opacity 0.25s;
 	-webkit-transition:opacity 0.25s;
 }
-
+#curFriends {
+	margin-bottom: 150px !important;
+}
 .name {
 	padding-left: 10px;
 }

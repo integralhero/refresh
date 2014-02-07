@@ -1,0 +1,24 @@
+{
+	"friends": [
+		{
+			"name": "Doug Engelbart",
+			"description": "Has awesome pet mice",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+		},
+		{
+			"name": "Ivan Sutherland",
+			"description": "Great at sketching",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+		},
+		{
+			"name": "JCR Licklider",
+			"description": "Uses big words like 'symbiosis'",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/6/66/J._C._R._Licklider.jpg"			
+		},
+		{
+			"name": "Allen Newell",
+			"description": "Really into psychology",
+			"imageURL": "http://www.nap.edu/html/biomems/photo/anewell.JPG"
+		}
+	]
+}
