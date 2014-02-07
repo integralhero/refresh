@@ -48,8 +48,14 @@ body {
 	-moz-transition:opacity 0.25s;
 	-webkit-transition:opacity 0.25s;
 }
+#addFriend {
+	height: 100px;
+}
 #curFriends {
 	margin-bottom: 150px !important;
+}
+.refresher:hover {
+    color: green;
 }
 .name {
 	padding-left: 10px;
