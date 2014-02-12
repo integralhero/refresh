@@ -5,6 +5,10 @@ body {
 	width: auto !important
 }
 
+.blue {
+    color:#00ff00;
+}
+
 .navbar-nav.navbar-right:last-child {
 	margin-right: 0 !important;
 }

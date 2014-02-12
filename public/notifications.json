@@ -1,0 +1,20 @@
+{
+	"notifications": [
+		{
+			"name": "Doug Engelbart",
+			"description": "Has awesome pet mice",
+		},
+		{
+			"name": "Ivan Sutherland",
+			"description": "Great at sketching",
+		},
+		{
+			"name": "JCR Licklider",
+			"description": "Uses big words like 'symbiosis'",
+		},
+		{
+			"name": "Allen Newell",
+			"description": "Really into psychology",
+		}
+	]
+}
