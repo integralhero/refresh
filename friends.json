@@ -1,24 +1,24 @@
 {
 	"friends": [
 		{
-			"name": "Doug Engelbart",
-			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"name": "David Jiang",
+			"description": "1 week ago",
+			"imageURL": "https://scontent-a-sjc.xx.fbcdn.net/hphotos-ash2/t1/163520_10151504414784591_859912141_n.jpg?lvh=1"			
 		},
 		{
-			"name": "Ivan Sutherland",
-			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"name": "Blake Lively",
+			"description": "4 days ago",
+			"imageURL": "http://static2.wikia.nocookie.net/__cb20100916160249/dcmovies/images/d/d8/Blake_Lively.jpg"			
 		},
 		{
-			"name": "JCR Licklider",
-			"description": "Uses big words like 'symbiosis'",
+			"name": "Hermione Granger",
+			"description": "3 days ago",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/6/66/J._C._R._Licklider.jpg"			
 		},
 		{
-			"name": "Allen Newell",
-			"description": "Really into psychology",
-			"imageURL": "http://www.nap.edu/html/biomems/photo/anewell.JPG"
+			"name": "Dylan Moore",
+			"description": "2 hours ago",
+			"imageURL": "https://scontent-a-sjc.xx.fbcdn.net/hphotos-frc1/t1/227411_469865533107396_1201524531_n.jpg"
 		}
 	]
 }
