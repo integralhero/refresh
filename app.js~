@@ -2,18 +2,20 @@
 /**
  * Module dependencies.
  */
-
 var express = require('express');
+var jsdom = require('jsdom');
 var routes = require('./routes');
 var user = require('./routes/user');
 var home = require('./routes/home');
 var profile = require('./routes/profile');
+var how = require('./routes/how');
 var http = require('http');
 var path = require('path');
 var exphbs = require('express3-handlebars');
 var app = express();
 var cons = require('consolidate');
 var cloudinary = require('cloudinary');
+
 cloudinary.config({ 
   cloud_name: 'dqoghmerz', 
   api_key: '584839643982217', 
@@ -37,10 +39,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+
 app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/home', home.index);
 app.get('/profile', profile.getUser);
+app.get('/how', how.getPage);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

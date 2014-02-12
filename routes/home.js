@@ -27,4 +27,4 @@ $(document).on("click", ".addFriend", function(e) {
 	    console.log(json["friends"]);                       
 	  }
 	});
-});*/
+	});*/
