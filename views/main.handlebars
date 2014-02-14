@@ -9,13 +9,13 @@
 				<div class="row">
 					<div class="friend"> 
 						<div class="img-wrap">
-							<img width="150px" height="200px" src="{{imageURL}}" >
+							<img src="{{imageURL}}"  style="width: 200px; height: 200px; border: thick solid #666666; overflow: hidden; position: relative;" onload="OnImageLoad(event);">
 							<div class="description"><h3>{{name}}</h3>
 							<p>Last Seen: {{description}}</p> 
-							</div>
-							<div class="img-overlay">
+							
+
 								<button type="button" class="btn btn-success refreshbtn"><i class="fa fa-leaf fa-1x"></i></button>
-							</div>
+					</div>
 						</div>
 						</div>
 					</div>
