@@ -27,7 +27,8 @@
 			<ul class="nav navbar-nav navbar-right">
         		<li class="dropdown">
           		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Friend Notifications! <b class="caret"></b></a>
-          		<ul class="dropdown-menu">
+          		<ul class="dropdown-menu" id="notificationButton">
+              <li><a href="#" id="notficationButton" class="blue">Johnny B Good</a></li>
           		{{#each data.friends}}
           		<li><a href="#" class="blue">{{name}}</a></li>
           		{{notifications}}
@@ -42,6 +43,11 @@
 				</li>
 			</ul>
 		</nav>
+    <br>
+    <br>
+    <div>
+     <a id="notifyText">  messages from friends appear here!</p>
+    </div>
     	{{{body}}}
     	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     	 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
