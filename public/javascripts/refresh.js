@@ -86,3 +86,12 @@ $(document).on("click", "#addFriend", function(e) {
 	});
 });
 
+$(document).on("click", "#notificationButton", function(e) {
+	    console.log("notificationButton pressed!");
+	    $("#notifyText").html("hey man, it's been a while! we ought to hang out... hit me up sometime please");                      
+});
+
+$(document).on("click", "#notifyText", function(e) {
+	    console.log("text dissapears!");
+	    $("#notifyText").text("");                      
+});
