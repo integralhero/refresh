@@ -28,7 +28,7 @@ body {
 .description {
 	float:right;
 	position: relative;
-	text-align: left;
+	text-align: right;
 }
 
 .friendSmall {
@@ -38,19 +38,16 @@ body {
 
 .img {
 	float: left;
-	position: absolute;
 }
+
 .img-wrap{
 	height:200px;
-	position:relative;
-	width:700px;
+	width:60%;
 	margin: auto;
 	border-left: 10px solid green;
 	padding-left: 30px;
-}
-.img-overlay{
-	float:right;
 	position: relative;
+	display: block;
 }
 
 .img-wrap:hover .img-overlay{
