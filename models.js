@@ -5,6 +5,7 @@ var Schema = mongoose.Schema,
 var userSchema = new Schema({
 	id: ObjectId,
 	name: String,
+	password: String,
 	activities: [{type: mongoose.Schema.ObjectId, ref: 'Activity'}]
 });
 

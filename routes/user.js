@@ -5,7 +5,8 @@ exports.addUser = function(req, res) {
   var form_data = req.body;
   console.log(form_data);
   var newUser = new models.User({
-    "name": form_data['name']
+    "name": form_data['name'],
+    "password": form_data['password']
   });
   newUser.save(afterSave);
   function afterSave(err) {

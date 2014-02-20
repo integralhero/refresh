@@ -68,23 +68,6 @@ function OnImageLoad(evt) {
     $(img).css("top", result.targettop);
 }
 
-$(document).on("click", "#addFriend", function(e) {
-
-    bootbox.prompt("Who do you want to add?", function(result) {                
-	  if (result === null) {                                             
-	    console.log("Prompt dismissed");                              
-	  } else {
-	  	var name = result;
-	  	var picURL = 'http://upload.wikimedia.org/wikipedia/commons/6/66/J._C._R._Licklider.jpg';
-	    var friend = {
-	    	"name" : name,
-	    	"description" : "",
-	    	"imageURL" : picURL
-	    };
-	    console.log(friend);
-	    $("#friends").append("<div class='row'> <div class='friend'> <div class='img-wrap' ><img src='https://scontent-b-sjc.xx.fbcdn.net/hphotos-ash4/t1/1185358_694367837243460_875045615_n.jpg' style='width: 200px; height: 200px; overflow: hidden;' onload='OnImageLoad(event);'><div class='description'><h3>Kiki Hui</h3><p>Last Seen: 0 seconds ago</p><button type='button' class='btn btn-success refreshbtn'><i class='fa fa-leaf fa-1x'></i></button></div></div></div></div>");  }
-	});
-});
 
 $(document).on("click", "#notificationButton", function(e) {
 	    console.log("notificationButton pressed!");
@@ -92,12 +75,14 @@ $(document).on("click", "#notificationButton", function(e) {
 });
 
 $(document).on("click", "#addFriendButton", function(e) {   
-        var name = $('#add-friend-form #nameField').val();
+        var name = $('#new-user-form #nameField').val();
+        var password = $('#new-user-form #passwordField').val();
         console.log("Added " + name); 
-        if(name.length > 0) {
+        if(name.length > 0 && password.length > 0) {
             //alert("Added " + name); 
             var json = {
-                'name': name
+                'name': name,
+                'password': password
             };
             //alert("Added " + name); 
             $.post('/user/new', json, function() {
