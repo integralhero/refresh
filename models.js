@@ -6,12 +6,13 @@ var userSchema = new Schema({
 	id: ObjectId,
 	name: String,
 	password: String,
-	activities: [{type: mongoose.Schema.ObjectId, ref: 'Activity'}]
+	friends: [{type: ObjectId, ref: 'User'}],
+	activities: [{type: ObjectId, ref: 'Activity'}]
 });
 
 var activitySchema = Schema({
 	name: {type: String, required: true},
-	users: [{type: mongoose.Schema.ObjectId, ref: 'User'}]
+	users: [{type: ObjectId, ref: 'User'}]
 });
 
 exports.User = mongoose.model('User', userSchema);
