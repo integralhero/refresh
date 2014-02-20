@@ -8,7 +8,7 @@
 			<div id="friends">
 				{{#each data.friends}}
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-xs-12">
 						<div class="friend"> 
 							<div class="img-wrap">
 								<img width="150px" height="200px" src="{{imageURL}}" >
@@ -21,15 +21,7 @@
 							</div>
 							</div>
 					<div> 
-						<div class="img-wrap">
-							<img src="{{imageURL}}"  style="width: 200px; height: 200px; border: thick solid #666666; overflow: hidden; position: relative;" onload="OnImageLoad(event);">
-							<div class="description"><h3>{{name}}</h3>
-							<p>Last Seen: {{description}}</p> 
-							
-
-								<button type="button" class="btn btn-success refreshbtn"><i class="fa fa-leaf fa-1x"></i></button>
-					</div>
-						</div>
+						
 						<hr>
 					{{/each}}
 				</div>
