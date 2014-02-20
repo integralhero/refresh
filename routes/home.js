@@ -1,9 +1,14 @@
 var data = require("../public/friends.json");
 
 exports.index = function(req, res){
+  console.log(data);
+  console.log("ok now");
+  console.log(req.user);
   res.render('main', {
-		'data': data
+		'data': data,
+		'user': req.user
 	});
+  console.log("yay render");
 };
 
 /*

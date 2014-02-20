@@ -4,23 +4,26 @@
 			<h1>Friends    <i class="fa fa-plus fa-1x" id="addFriend"></i><br>
 			<small>Keep in touch</small> </h1>
 			<HR>
+			<H3>Hello {{user}}!</H3>
 			<div id="friends">
 				{{#each data.friends}}
 				<div class="row">
-					<div class="friend"> 
-						<div class="img-wrap">
-							<img width="150px" height="200px" src="{{imageURL}}" >
-							<div class="description"><h3>{{name}}</h3>
-							<p>Last Seen: {{description}}</p> 
+					<div class="col-md-12">
+						<div class="friend"> 
+							<div class="img-wrap">
+								<img width="150px" height="200px" src="{{imageURL}}" >
+								<div class="description"><h3>{{name}}</h3>
+								<p>Last Seen: {{description}}</p> 
+								</div>
+								<div class="img-overlay">
+									<button type="button" class="btn btn-success refreshbtn"><i class="fa fa-leaf fa-1x"></i></button>
+								</div>
 							</div>
-							<div class="img-overlay">
-								<button type="button" class="btn btn-success refreshbtn"><i class="fa fa-leaf fa-1x"></i></button>
 							</div>
 						</div>
-						</div>
-					</div>
-					<hr>
-				{{/each}}
+						<hr>
+					{{/each}}
+				</div>
 			</div>
 		</center>
 	</div>
