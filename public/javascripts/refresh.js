@@ -74,7 +74,8 @@ $(document).on("click", "#notificationButton", function(e) {
 	    $("#notifyText").html("hey man, it's been a while! we ought to hang out... hit me up sometime please");                      
 });
 
-$(document).on("click", "#addUserButton", function(e) {   
+
+$(document).on("click", "#addUserButton", function(e) { 
         var name = $('#new-user-form #nameField').val();
         var password = $('#new-user-form #passwordField').val();
         console.log("Added " + name); 
