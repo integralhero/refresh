@@ -1,0 +1,61 @@
+<div class="container">
+	<center>
+		<div class="col-md-12">
+			<h1>Friends<i class="fa fa-plus fa-1x" id="plus" data-toggle="modal" data-target="#myModal">
+			</i></h1>
+			<!-- Button trigger modal -->
+			
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h4 class="modal-title" id="myModalLabel">Add a Friend!</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form id="add-friend-form" role="form">
+			        	Name: <input required autofocus type="text" name="name" id="nameField">
+			        	<div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button id="addFriendButton" type="button" class="btn btn-default">Add Friend</button>
+					      </div>
+			        </form>
+			      </div>
+			      
+			    </div>
+			  </div>
+			</div>
+		
+			<HR>
+			<H3>Hello {{user}}!</H3>
+			<p>click on a friend to view what activities they are attending</p>
+			<div id="friends">
+				
+				<div class="row">
+					<div class="col-xs-12">
+						{{#each friends}}
+						<div class="friend"> 
+							<h2>{{name}}</h2>
+							<!--
+							<div class="img-wrap">
+								<img width="150px" height="200px" src="{{imageURL}}" >
+								<div class="description"><h3>{{name}}</h3>
+								<p>Last Seen: {{description}}</p> 
+								</div>
+								<div class="img-overlay">
+									<button type="button" class="btn btn-success refreshbtn"><i class="fa fa-leaf fa-1x"></i></button>
+								</div>
+							</div>
+							-->
+						</div>
+						{{/each}}
+					</div> 
+						
+					
+				</div>
+			</div>
+		</center>
+	</div>
+</div>
