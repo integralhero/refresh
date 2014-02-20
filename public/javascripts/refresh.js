@@ -74,7 +74,7 @@ $(document).on("click", "#notificationButton", function(e) {
 	    $("#notifyText").html("hey man, it's been a while! we ought to hang out... hit me up sometime please");                      
 });
 
-$(document).on("click", "#addFriendButton", function(e) {   
+$(document).on("click", "#addUserButton", function(e) {   
         var name = $('#new-user-form #nameField').val();
         var password = $('#new-user-form #passwordField').val();
         console.log("Added " + name); 
@@ -87,6 +87,21 @@ $(document).on("click", "#addFriendButton", function(e) {
             //alert("Added " + name); 
             $.post('/user/new', json, function() {
                 window.location.href = '/home'; // reload the page
+            });
+        }                
+});
+
+$(document).on("click", "#loginButton", function(e) {   
+        var name = $('#login-form #nameField').val();
+        var password = $('#login-form #passwordField').val();
+        if(name.length > 0 && password.length > 0) {
+            //alert("Added " + name); 
+            var json = {
+                'name': name,
+                'password': password
+            };
+            //alert("Added " + name); 
+            $.post('/user/login', json, function() {
             });
         }                
 });

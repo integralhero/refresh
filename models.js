@@ -10,6 +10,10 @@ var userSchema = new Schema({
 	activities: [{type: ObjectId, ref: 'Activity'}]
 });
 
+userSchema.methods.validate = function(guessPass) {
+	return this.password = guessPass;
+}
+
 var activitySchema = Schema({
 	name: {type: String, required: true},
 	users: [{type: ObjectId, ref: 'User'}]
