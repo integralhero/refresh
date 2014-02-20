@@ -1,30 +1,14 @@
-var data = require("../public/friends.json");
+var models = require('../models');
 
-exports.index = function(req, res){
-  res.render('main', {
-		'data': data
-	});
+
+exports.view = function(req, res){
+
+	models.User
+		.find()
+		.exec(renderUsers);
+
+	function renderUsers(err, users) {
+		res.render('main', { 'friends': users });
+	}
+
 };
-
-/*
-$(document).on("click", ".addFriend", function(e) {
-
-	console.log(data);
-    bootbox.prompt("Who do you want to add?", function(result) {                
-	  if (result === null) {                                             
-	    console.log("Prompt dismissed");                              
-	  } else {
-	  	var name = result;
-	  	var picURL = 'http://upload.wikimedia.org/wikipedia/commons/6/66/J._C._R._Licklider.jpg';
-	    var friend = {
-	    	"name" : name,
-	    	"description" : "",
-	    	"imageURL" : picURL
-	    };
-	    console.log(friend);
-	    data["friends"].push(friend);
-	    console.log("after push");  
-	    console.log(json["friends"]);                       
-	  }
-	});
-	});*/

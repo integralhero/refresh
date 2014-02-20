@@ -1,30 +1,66 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>refresh</title>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-</head>
-<body>
-		<div class="container" >
-			
-			<h1 id="titleblock" class="text-center"><i id="leaf" class="fa fa-leaf fa-1x"></i>Refresh </h1>
-			<div class="row">
-			  <div class="page-header"><h2>Login Form</h2></div>
+	<!doctype html>
+	<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<title>refresh</title>
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	</head>
+	<body>
+		<div class="container-fluid" >
 
-			      <!-- Form Name -->
-			      <legend><h3>Sign In</h3></legend>
-			      <!-- Button (Double) -->
-			      <div class="form-group">
-			        <label class="col-md-1 control-label" for="login"></label>
-			      <div class="col-md-12">
-			        <a href="/auth/facebook" style="text-decoration : none"><button id="login" name="login" class="btn btn-block btn-primary"><i class="fa fa-facebook"></i>   Login with Facebook</button></a>
-			      </div>
+			<h1 id="titleblock" class="text-center"><i id="leaf" class="fa fa-leaf fa-1x"></i>Rally</h1>
+			<div class="row-fluid">
+				<div class="col-md-12">
+					<form role="form">
+						<div class="form-group">
+							<!-- make new username/password -->
+							<input type="text" class="form-control" name="nameField" id="nameField" placeholder="Username or email">
+						</div>
 
-				</div> <!--./row -->
-			</div> <!--./container -->
+						<div class="form-group">
+							<input type="password" class="form-control" name="passwordField" id="passwordField" placeholder = "Password">
+						</div>
 
-</body>
-</html>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+						</div>
+
+						<span class="help-block">New to Rally? <a href="#signup">Sign up!</a></span>
+						<button type="submit" class="btn btn-block btn-success">Sign In</button>
+					</form>
+				</div>
+			</div>
+			<hr>
+
+			<div class="row-fluid">
+				<div class="col-md-12">
+					<div class="page-header" id="signup"><h2>Sign Up</h2></div>
+					<form role="form" id="new-user-form">
+						<div class="form-group">
+							<!-- make new username/password -->
+							<input type="text" class="form-control" name="nameField" id="nameField" placeholder="Username or email">
+						</div>
+
+						<div class="form-group">
+							<input type="password" class="form-control" name="passwordField" id="passwordField" placeholder = "Password">
+						</div>
+						<button type="button" class="btn btn-block btn-primary" id="addUserButton">Sign Up for Rally</button>
+
+					</form>
+				</div> <!--./col-->
+
+			</div> <!--./row -->
+		</div> <!--./container -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+    	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    	<script type="text/javascript" src="javascripts/refresh.js"></script>
+	</body>
+	</html>
