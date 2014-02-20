@@ -29,6 +29,11 @@ passport.deserializeUser(function(obj, done) {
 done(null, obj);
 });
 
+var local_database_name = 'rally';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
+
 // config
 passport.use(new FacebookStrategy({
  clientID: config.facebook.clientID,
@@ -121,11 +126,10 @@ if ('development' == app.get('env')) {
 
 
 app.get('/', routes.index);
-app.get('/users', user.list);
-app.get('/home', home.index);
+app.get('/home', home.view);
 app.get('/profile', profile.getUser);
 app.get('/how', how.getPage);
-
+app.post('/user/new', user.addUser);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

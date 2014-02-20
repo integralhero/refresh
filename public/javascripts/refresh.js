@@ -91,6 +91,21 @@ $(document).on("click", "#notificationButton", function(e) {
 	    $("#notifyText").html("hey man, it's been a while! we ought to hang out... hit me up sometime please");                      
 });
 
+$(document).on("click", "#addFriendButton", function(e) {   
+        var name = $('#add-friend-form #nameField').val();
+        console.log("Added " + name); 
+        if(name.length > 0) {
+            //alert("Added " + name); 
+            var json = {
+                'name': name
+            };
+            //alert("Added " + name); 
+            $.post('/user/new', json, function() {
+                window.location.href = '/home'; // reload the page
+            });
+        }                
+});
+
 $(document).on("click", "#notifyText", function(e) {
 	    console.log("text dissapears!");
 	    $("#notifyText").text("");                      
