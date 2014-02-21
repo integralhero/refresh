@@ -1,8 +1,7 @@
-<div class="container">
+<div class="container-fluid">
 	<center>
 		<div class="col-md-12">
-			<h1>Friends<i class="fa fa-plus fa-1x" id="plus" data-toggle="modal" data-target="#myModal">
-			</i></h1>
+			<button class="btn btn-default" data-target="#myModal" data-toggle="modal" id="plus" ><i class="fa fa-plus fa-1x" ></i></button>
 			<!-- Button trigger modal -->
 			
 
@@ -28,15 +27,14 @@
 			  </div>
 			</div>
 		
-			<HR>
-			<H3>Hello {{user}}!</H3>
+			<h5>Hello {{user}}!</H5>
 			<div id="friends">
 				
 				<div class="row">
 					<div class="col-xs-12">
 						{{#each friends}}
 						<div class="friend"> 
-							<h2>{{name}}</h2>
+							<p>{{name}}</p>
 							<!--
 							<div class="img-wrap">
 								<img width="150px" height="200px" src="{{imageURL}}" >
@@ -50,6 +48,18 @@
 							-->
 						</div>
 						{{/each}}
+
+						<div class="activity"> 
+							<p>Eat Dinner with Me</p>
+								<div class="description"><h3>{{name}}</h3>
+									<p>Location: Arrillaga Dining<br>
+									Time: Thursday, February 20, 6:00pm</p>
+								</div>
+						</div>
+							
+
+
+
 					</div> 
 						
 					
